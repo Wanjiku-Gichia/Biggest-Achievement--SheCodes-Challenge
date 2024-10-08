@@ -14,9 +14,29 @@ body {
   padding: 20px;
 }
 
+button {
+  margin: 0 auto; /* Adjust margin for spacing */
+  display: block;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 24px; /* Increase padding for a bigger button */
+  font-size: 16px; /* Increase font size */
+  width: 150px; /* Set a wider button */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
+}
+
+button:hover {
+  background-color: #333; /* Slightly lighter on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 footer {
   text-align: center;
@@ -42,7 +62,7 @@ footer a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .intro p {
@@ -64,7 +84,7 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .qualifications img {
@@ -86,4 +106,19 @@ footer a:hover {
 
 .qualifications a:hover {
   background-color: #004d00;
+}
+.darkTheme {
+  background: black;
+  color: white; /* Ensure text is readable */
+}
+
+.darkTheme a {
+  color: #00ff00; /* Bright green for links */
+}
+
+.darkTheme h1 {
+  color: #ffcc00; /* Gold color for headings */
+}
+.darkTheme p {
+  color: black;
 }
