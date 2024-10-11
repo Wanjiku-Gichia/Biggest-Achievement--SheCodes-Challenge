@@ -213,6 +213,58 @@
       .submitFeedback:hover {
         background-color: #004d00;
       }
+
+      @media (max-width: 768px) {
+        .qualifications {
+          flex-direction: column;
+        }
+
+        .qualifications div {
+          margin-bottom: 20px;
+        }
+
+        .intro {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .intro img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .qualifications video {
+          max-width: 100%;
+        }
+
+        form {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .userFeedback {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        .submitFeedback {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 28px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
     </style>
   </head>
 
