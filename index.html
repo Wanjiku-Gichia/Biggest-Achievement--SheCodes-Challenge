@@ -11,12 +11,214 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/styles.css" />
+    <style>
+      body,
+      h1,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #f7f7f7;
+        color: #333;
+        padding: 20px;
+        height: 100%;
+        margin: 0;
+      }
+
+      button {
+        margin: 0 auto;
+        display: block;
+        background-color: black;
+        background: linear-gradient(45deg, #f06, #800080);
+        border-radius: 5px;
+        color: white;
+        padding: 12px 24px;
+        font-size: 16px;
+        width: 150px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background-color: #333;
+        transform: scale(1.05);
+        background: linear-gradient(45deg, #c71585, #9400d3);
+        transform: scale(1.05);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: #4b0082;
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #4b0082;
+      }
+
+      form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: #006400;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      footer a:hover {
+        color: #004d00;
+      }
+      .darkTheme {
+        background: black;
+        color: white;
+      }
+
+      .darkTheme a {
+        color: #00ff00;
+      }
+
+      .darkTheme h1,
+      .darkTheme h2 {
+        color: #ffcc00;
+      }
+      .darkTheme p {
+        color: black;
+      }
+
+      .intro {
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .intro p {
+        flex-basis: 50%;
+        padding-right: 20px;
+      }
+      .intro:hover {
+        transform: scale(1.02);
+      }
+
+      .intro img {
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .qualifications {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .qualifications div {
+        margin-bottom: 30px;
+      }
+
+      .qualifications video {
+        width: auto;
+        max-width: 350px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      .qualifications img {
+        max-width: 350px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .qualifications a {
+        display: inline-block;
+        margin: 0 20px;
+        padding: 10px 20px;
+        background-color: #006400;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .qualifications a:hover {
+        background-color: #004d00;
+        transform: scale(1.05);
+      }
+      .userFeedback {
+        flex-grow: 1;
+        border: 1px solid #ccc;
+        color: #333;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-right: 20px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+
+      .submitFeedback {
+        background-color: #006400;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .submitFeedback:hover {
+        background-color: #004d00;
+      }
+    </style>
   </head>
 
   <body>
     <button class="darkTheme" id="darkTheme">dark theme</button>
-    <h1>Proud Graduate of SheCodes Plus</h1>
+    <h1>Proud Graduate of SheCodes Plus!</h1>
     <section class="intro">
       <p>
         "I'm so proud of myself for finishing the SheCodes Plus program this
@@ -32,17 +234,35 @@
       />
     </section>
     <section class="qualifications">
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/274/original/SheCodes_Plus_certificate.png?1728042755"
-        alt="My SheCodes Plus Certificate"
-      />
-      <a
-        href="https://endearing-stroopwafel-52abb5.netlify.app/"
-        target="_blank"
-        >My She Codes Plus project demo
-      </a>
+      <div>
+        <h2>My SheCodes Plus Certificate</h2>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/146/274/original/SheCodes_Plus_certificate.png?1728042755"
+          alt="My SheCodes Plus Certificate"
+        />
+      </div>
+      <div>
+        <h2>
+          <a
+            href="https://www.loom.com/share/1e30118870434fcaa24a41ce0f872809"
+            target="_blank"
+          >
+            My She Codes Plus project demo
+          </a>
+        </h2>
 
-      <img src="images/my project.png" alt="" />
+        <video controls>
+          <source src="project screen grab.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div>
+        <h2>My project screenshot</h2>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/147/121/original/Screenshot_2024-10-07_at_15.43.12.png?1728643329"
+          alt="My project screenshot"
+        />
+      </div>
     </section>
     <form action="">
       <input
@@ -74,6 +294,30 @@
         >Netlify.</a
       >
     </footer>
-    <script src="src/index.js"></script>
+    <script>
+      function changeTheme(params) {
+        let body = document.querySelector("body");
+        body.classList.toggle("darkTheme");
+      }
+
+      let darkTheme = document.querySelector(".darkTheme");
+      darkTheme.addEventListener("click", changeTheme);
+
+      function userFeedback(event) {
+        event.preventDefault();
+        let feedbackInput = document.querySelector("#userFeedback");
+        let feedback = feedbackInput.value;
+        if (feedback.length > 0) {
+          alert(
+            `Thank you! Your feedback ("${feedback}") is very much appreciated.`
+          );
+          feedbackInput.value = "";
+        } else {
+          alert("please 🙏 give me some feedbak to help improve my project.");
+        }
+      }
+      let feedback = document.querySelector("#submitFeedback");
+      feedback.addEventListener("click", userFeedback);
+    </script>
   </body>
 </html>
